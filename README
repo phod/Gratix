@@ -16,20 +16,21 @@ Features:
     Can copy graph to new instance
 
 Example:
-    Let foo be directed with bar, baz and faz
-    bar connects to baz with weight 45
-    baz connects to bar with weight 39
-    faz connects to bar with weight 17
+    Let foo be weighted and directed have bar, baz and faz
+    Join bar to baz with weight 45
+    Join baz to bar with weight 39
+    Join faz to bar with weight 17
 
-    Let foobar be supergraph of foo with gar
-    gar connects to baz with weight 0.9
-    gar connects to bar with weight 0.01
+    Let foobar be supergraph of foo have gar
+    Join gar to baz with weight 0.9
+    Join gar to bar with weight 0.01
 
     Print matrix foo
 
     Print matrix foobar
 
     Remove bar from foo //removed for foobar too.
+    Add new to foo //added to foobar too
 
     Let goo copy foo
     Remove baz from goo //still in foo

@@ -36,4 +36,13 @@ Example:
     Remove baz from goo //still in foo
 
 Grammar:
-    
+    ***In progress. Grammar may be broken in future versions until this message is removed***
+
+    Basic grammar, handles declaration, connecting edges, and printing.
+
+    connectV = "Join" vVar "to" vVarlist [ "with weight" num];
+    vVarlist = vVar [ {"," vVar} "and" vVar ];
+    declareG = "Let" gVar gTypes "have" vVarList;
+    gTypes = "be" gTypeList | epsilon;
+    gTypeList = gType [ {"," gType} "and" gType ];
+    print = "Print" printType gVar

@@ -46,3 +46,5 @@ Grammar:
     gTypes = "be" gTypeList | epsilon;
     gTypeList = gType [ {"," gType} "and" gType ];
     print = "Print" printType gVar
+    prog = expr prog | epsilon
+    expr = declareG | connectV | print
